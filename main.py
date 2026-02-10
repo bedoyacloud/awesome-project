@@ -10,5 +10,5 @@ def read_root() -> dict[str, str]:
 
 
 @app.get("/items/{item_id}")
-def read_item(item_id: int, quantity: str | None = None) -> dict[int | None ]:
+def read_item(item_id: int, quantity: str | None = None) -> dict[str, int | str | None]:
     return {"item_id": item_id, "quantity": quantity}
